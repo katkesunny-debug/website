@@ -45,7 +45,8 @@ h2 { font-size: clamp(1.9rem, 3.8vw, 3rem); max-width: 18ch; }
 #why-title { max-width: 30ch; }
 .lead { color: var(--grey); max-width: 60ch; margin-top: 18px; }
 .dark .lead { color: var(--grey-soft); }
-.eyebrow { display: inline-block; padding: 7px 14px; border: 1.5px solid currentColor; border-radius: 999px; font-size: 0.8rem; font-weight: 600; margin-bottom: 22px; }
+.eyebrow { display: inline-flex; align-items: center; gap: 14px; margin-bottom: 24px; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.24em; text-transform: uppercase; color: #6D28D9; }
+.eyebrow::before { content: ""; width: 36px; height: 3px; border-radius: 3px; background: linear-gradient(90deg, #7C3AED, #C026D3); flex-shrink: 0; }
 
 /* Reveal on scroll */
 .reveal { opacity: 0; translate: 0 36px; transition: opacity 0.8s ease var(--d, 0s), translate 0.8s cubic-bezier(.2,.7,.2,1) var(--d, 0s); }
@@ -400,7 +401,6 @@ h2 { font-size: clamp(1.9rem, 3.8vw, 3rem); max-width: 18ch; }
 
   <section id="local" class="section divided" aria-labelledby="local-title">
     <div class="wrap">
-      <span class="eyebrow reveal">Ulhasnagar</span>
       <h2 id="local-title" class="reveal">Digital Marketing Services in Ulhasnagar</h2>
       <p class="lead reveal">Looking for a digital marketing agency near you? Fullstack Media helps businesses in <strong>Ulhasnagar</strong> grow with social media marketing, Facebook and Instagram ads, and conversion-ready websites.</p>
       <div class="svc-grid">
